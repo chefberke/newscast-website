@@ -30,7 +30,7 @@ export default function About({
   className,
 }: WordPullUpProps) {
   return (
-    <motion.h1
+    <motion.div
       variants={wrapperFramerProps}
       initial="hidden"
       animate="show"
@@ -44,6 +44,6 @@ export default function About({
           {word === "" ? <span>&nbsp;</span> : word}
         </motion.span>
       ))}
-    </motion.h1>
+    </motion.div>
   );
 }

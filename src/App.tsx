@@ -37,7 +37,7 @@ function App() {
 
   return (
     <div className="w-full h-auto bg-white text-gray-950 max-w-sm:h-[250vh]">
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center z-10">
         <div className="max-w-[40rem] w-[85%]">
           <div id="smooth-wraper" className="container">
             <div id="smooth-content" className="mt-36">
