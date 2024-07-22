@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import Links from "./Links";
 import Stack from "./Stack";
 
-import yourweathers from "../assets/yourweathers.png";
+import yourweathers from "../assets/yourweathers-2.png";
 import noteapp from "../assets/noteapp.png";
 
 function Projects() {
