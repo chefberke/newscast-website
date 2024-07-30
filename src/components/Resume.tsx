@@ -1,5 +1,5 @@
 import { IoMdDownload } from "react-icons/io";
-import resume from "../assets/berkekanber-resume-updated.pdf";
+import resume from "../assets/berkekanber-resume.pdf";
 
 function Resume() {
   return (
