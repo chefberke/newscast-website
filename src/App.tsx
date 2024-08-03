@@ -19,7 +19,7 @@ function App() {
           scrollTrigger: {
             trigger: "#smooth-wraper",
             start: "top top",
-            end: "+=500%",
+            end: "+=800%",
             scrub: 1,
             pin: true,
             markers: false,
