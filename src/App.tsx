@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Analytics } from "@vercel/analytics/react";
 
 import About from "./components/About";
 import Education from "./components/Education";
@@ -41,11 +42,14 @@ function App() {
         <div className="max-w-[40rem] w-[85%]">
           <div id="smooth-wraper" className="container">
             <div id="smooth-content" className="mt-36">
+              <Analytics />
               <About />
               <Projects />
               <Education />
               <Contact />
-              <p className="flex items-center justify-center text-center mt-20 text-[2rem]">*</p>
+              <p className="flex items-center justify-center text-center mt-20 text-[2rem]">
+                *
+              </p>
             </div>
           </div>
         </div>
