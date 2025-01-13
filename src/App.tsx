@@ -1,6 +1,3 @@
-import { useEffect } from "react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Analytics } from "@vercel/analytics/react";
 
 import About from "./components/About";
@@ -9,45 +6,18 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 
 function App() {
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-
-    ScrollTrigger.matchMedia({
-      "(min-width: 640px)": function () {
-        gsap.to("#smooth-content", {
-          y: -window.innerHeight,
-          ease: "power2.inOut",
-          scrollTrigger: {
-            trigger: "#smooth-wraper",
-            start: "top top",
-            end: "+=800%",
-            scrub: 1,
-            pin: true,
-            markers: false,
-          },
-        });
-      },
-
-      "(max-width: 639px)": function () {
-        gsap.killTweensOf("#smooth-content");
-
-        gsap.set("#smooth-content", { clearProps: "all" });
-      },
-    });
-  }, []);
-
   return (
-    <div className="w-full h-auto bg-white text-gray-950 max-w-sm:h-[250vh]">
+    <div className="w-full h-full bg-white text-gray-950">
       <div className="flex items-center justify-center z-10">
         <div className="max-w-[40rem] w-[85%]">
-          <div id="smooth-wraper" className="container">
+          <div>
             <div id="smooth-content" className="mt-36">
               <Analytics />
               <About />
               <Projects />
               <Education />
               <Contact />
-              <p className="flex items-center justify-center text-center mt-20 text-[2rem]">
+              <p className="flex items-center justify-center text-center mt-20 mb-20 text-[2rem]">
                 *
               </p>
             </div>

@@ -7,20 +7,4 @@
   html {
     font-family: "Poppins", sans-serif;
   }
-
-  .container {
-    overflow: hidden;
-    height: 150vh;
-  }
-
-  @media screen and (max-width: 640px) {
-    .container {
-      height: 375vh;
-    }
-  }
-
-  #smooth-content {
-    display: flex;
-    flex-direction: column;
-  }
 }

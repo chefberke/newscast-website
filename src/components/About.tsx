@@ -13,9 +13,12 @@ function About() {
         </div>
         <div className="pt-6">
           <h1>
-            <WordPullUp className="text-gray-950 font-semibold text-[3.2rem] text-start" words="Hi, I'm Berke 👋" />
+            <WordPullUp
+              className="text-gray-950 font-semibold text-[3.2rem] text-start"
+              words="Hi, I'm Berke 👋"
+            />
           </h1>
-          <p className="text-[1.4rem] text-gray-800">Frontend Developer / Engineer</p>
+          <p className="text-[1.4rem] text-gray-800">Software Developer</p>
         </div>
 
         <div className="flex-col items-center justify-center text-start mt-6">
@@ -29,12 +32,18 @@ function About() {
           >
             <div>
               <p className="text-start text-gray-700 text-[1rem] pt-2">
-                I'm Berke Kanber, a frontend developer / engineer based in İzmir.
+                I'm Berke Kanber, a software developer / engineer based in
+                İzmir.
               </p>
               <p className="text-start text-gray-700 text-[1rem] pt-2">
-                I enjoy working with various tools and technologies to create seamless user experiences. Currently, I'm
-                a first-year Computer Programming student at{" "}
-                <a href="https://www.ieu.edu.tr/tr" target="_blank" className="underline text-gray-600">
+                I enjoy working with various tools and technologies to create
+                seamless user experiences. Currently, I'm a second-year Computer
+                Programming student at{" "}
+                <a
+                  href="https://www.ieu.edu.tr/tr"
+                  target="_blank"
+                  className="underline text-gray-600"
+                >
                   İzmir University of Economics.
                 </a>
               </p>
