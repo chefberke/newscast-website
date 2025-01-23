@@ -3,7 +3,7 @@ import Links from "./Links";
 import Stack from "./Stack";
 
 import gitcow from "../assets/git-cow.png";
-import noteapp from "../assets/noteapp.png";
+import spotiwrap from "../assets/spotiwrap.png";
 import unidegerlendir from "../assets/unidegerlendir.png";
 import memorybuddy from "../assets/memorybuddy.png";
 
@@ -22,30 +22,29 @@ function Projects() {
               transition={{ duration: 1, ease: "easeOut" }}
             >
               <div className="grid grid-cols-2 grid-rows-1 gap-6 max-sm:grid-cols-1">
-                <div className="h-[27rem] border border-gray-300 rounded-md  transition-all hover:shadow-2xl max-sm:h-[28.5rem]">
-                  <div className="w-full">
-                    <img src={unidegerlendir} className="rounded-t-md" />
+                {/* Üniversite Değerlendir */}
+                <div className="h-[28.5rem] border border-gray-300 rounded-md transition-all hover:shadow-2xl">
+                  <div className="w-full h-[12rem]">
+                    <img
+                      src={unidegerlendir}
+                      className="rounded-t-md object-cover h-full w-full"
+                    />
                   </div>
-                  <div className="mt-2 ml-2 mr-4 fle-col">
+                  <div className="flex flex-col justify-between h-[16.5rem] p-4">
                     <div>
                       <h2 className="text-gray-950 font-medium text-[1.1rem]">
                         Üniversite Değerlendir
                       </h2>
-                    </div>
-                    <div>
                       <p className="text-gray-700 text-[0.8rem]">
-                        {" "}
                         university rate app
                       </p>
                     </div>
-                    <div className="h-[4rem] flex items-center justify-center">
-                      <p className="text-[0.8rem] text-gray-500 pt-1">
-                        Üniversite Değerlendir allows users to anonymously rate
-                        and comment on universities in Izmir.
-                      </p>
-                    </div>
-                    <div className="flex-col">
-                      <div className="flex gap-2">
+                    <p className="text-[0.8rem] text-gray-500">
+                      Üniversite Değerlendir allows users to anonymously rate
+                      and comment on universities in Izmir.
+                    </p>
+                    <div>
+                      <div className="flex gap-2 mb-2">
                         <Stack technology={"Next.js"} />
                         <Stack technology={"Supabase"} />
                         <Stack technology={"Typescript"} />
@@ -55,41 +54,39 @@ function Projects() {
                         <Stack technology={"TailwindCSS"} />
                       </div>
                     </div>
-                    <div className="mt-4">
-                      <Links
-                        source={
-                          "https://github.com/chefberke/universite-degerlendir"
-                        }
-                        website={"https://universite-degerlendir.vercel.app/"}
-                      />
-                    </div>
+                    <Links
+                      source={
+                        "https://github.com/chefberke/universite-degerlendir"
+                      }
+                      website={"https://universite-degerlendir.vercel.app/"}
+                    />
                   </div>
                 </div>
-                <div className="h-[27rem] border border-gray-300 rounded-md transition-all hover:shadow-2xl max-sm:h-[28.5rem]">
-                  <div className="w-full">
-                    <img src={gitcow} className="rounded-t-md" />
+
+                {/* Git Cow */}
+                <div className="h-[28.5rem] border border-gray-300 rounded-md transition-all hover:shadow-2xl">
+                  <div className="w-full h-[12rem]">
+                    <img
+                      src={gitcow}
+                      className="rounded-t-md object-cover h-full w-full"
+                    />
                   </div>
-                  <div className="mt-2 ml-2 mr-4 fle-col">
+                  <div className="flex flex-col justify-between h-[16.5rem] p-4">
                     <div>
                       <h2 className="text-gray-950 font-medium text-[1.1rem]">
                         git.cow
                       </h2>
-                    </div>
-                    <div>
                       <p className="text-gray-700 text-[0.8rem]">
-                        {" "}
                         github profile analytics
                       </p>
                     </div>
-                    <div className="h-[5rem] flex items-center justify-center">
-                      <p className="text-[0.8rem] text-gray-500 pt-1">
-                        Git Cow is a sophisticated web tool designed for
-                        developers who want a more efficient way to analyze
-                        their GitHub activity and project metrics.
-                      </p>
-                    </div>
-                    <div className="flex-col">
-                      <div className="flex gap-2">
+                    <p className="text-[0.8rem] text-gray-500">
+                      Git Cow is a sophisticated web tool designed for
+                      developers who want a more efficient way to analyze their
+                      GitHub activity and project metrics.
+                    </p>
+                    <div>
+                      <div className="flex gap-2 mb-2">
                         <Stack technology={"Next.js"} />
                         <Stack technology={"Supabase"} />
                         <Stack technology={"Typescript"} />
@@ -100,36 +97,74 @@ function Projects() {
                         <Stack technology={"Motion"} />
                       </div>
                     </div>
-                    <div className="mt-4">
-                      <Links
-                        source={"https://github.com/lumi-work/git.cow"}
-                        website={"https://git-cow.vercel.app/"}
-                      />
-                    </div>
+                    <Links
+                      source={"https://github.com/lumi-work/git.cow"}
+                      website={"https://git-cow.vercel.app/"}
+                    />
                   </div>
                 </div>
-                <div className="h-[27rem] border border-gray-300 rounded-md transition-all hover:shadow-2xl max-sm:h-[28.5rem]">
-                  <div className="w-full">
-                    <img src={memorybuddy} className="rounded-t-md" />
+
+                {/* Spotiwrap */}
+                <div className="h-[28.5rem] border border-gray-300 rounded-md transition-all hover:shadow-2xl">
+                  <div className="w-full h-[12rem]">
+                    <img
+                      src={spotiwrap}
+                      className="rounded-t-md object-cover h-full w-full"
+                    />
                   </div>
-                  <div className="mt-2 ml-2 mr-4 fle-col">
+                  <div className="flex flex-col justify-between h-[16.5rem] p-4">
+                    <div>
+                      <h2 className="text-gray-950 font-medium text-[1.1rem]">
+                        Spotiwrap
+                      </h2>
+                      <p className="text-gray-700 text-[0.8rem]">
+                        spotify tracks app
+                      </p>
+                    </div>
+                    <p className="text-[0.8rem] text-gray-500">
+                      Open-source Spotify Wrapped app showcasing your top
+                      tracks, artists, and genres in an interactive interface.
+                    </p>
+                    <div>
+                      <div className="flex gap-2 mb-2">
+                        <Stack technology={"Next.js"} />
+                        <Stack technology={"Typescript"} />
+                        <Stack technology={"Supabase"} />
+                      </div>
+                      <div className="flex gap-2">
+                        <Stack technology={"Zustand"} />
+                        <Stack technology={"TailwindCSS"} />
+                      </div>
+                    </div>
+                    <Links
+                      source={"https://github.com/lumi-work/spotiwrap"}
+                      website={"/"}
+                    />
+                  </div>
+                </div>
+
+                {/* Memory Buddy */}
+                <div className="h-[28.5rem] border border-gray-300 rounded-md transition-all hover:shadow-2xl">
+                  <div className="w-full h-[12rem]">
+                    <img
+                      src={memorybuddy}
+                      className="rounded-t-md object-cover h-full w-full"
+                    />
+                  </div>
+                  <div className="flex flex-col justify-between h-[16.5rem] p-4">
                     <div>
                       <h2 className="text-gray-950 font-medium text-[1.1rem]">
                         Memory Buddy
                       </h2>
+                      <p className="text-gray-700 text-[0.8rem]">memory app</p>
                     </div>
+                    <p className="text-[0.8rem] text-gray-500">
+                      Capture the moments that matter, cherish the memories
+                      forever. Our app lets you preserve and share your life’s
+                      beautiful experiences.
+                    </p>
                     <div>
-                      <p className="text-gray-700 text-[0.8rem]"> memory app</p>
-                    </div>
-                    <div className="h-[5rem] flex items-center justify-center">
-                      <p className="text-[0.8rem] text-gray-500 pt-1">
-                        Capture the moments that matter, cherish the memories
-                        forever. Our app lets you preserve and share your lifes
-                        beautiful experiences.
-                      </p>
-                    </div>
-                    <div className="flex-col">
-                      <div className="flex gap-2">
+                      <div className="flex gap-2 mb-2">
                         <Stack technology={"Next.js"} />
                         <Stack technology={"Typescript"} />
                       </div>
@@ -137,50 +172,10 @@ function Projects() {
                         <Stack technology={"TailwindCSS"} />
                       </div>
                     </div>
-                    <div className="mt-4">
-                      <Links
-                        source={"https://github.com/chefberke/memory-buddy"}
-                        website={"https://memory-buddy.vercel.app/"}
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="h-[27rem] border border-gray-300 rounded-md  transition-all hover:shadow-2xl max-sm:h-[28.5rem]">
-                  <div className="w-full">
-                    <img src={noteapp} className="rounded-t-md" />
-                  </div>
-                  <div className="mt-2 ml-2 mr-4 fle-col">
-                    <div>
-                      <h2 className="text-gray-950 font-medium text-[1.1rem]">
-                        Notes App
-                      </h2>
-                    </div>
-                    <div>
-                      <p className="text-gray-700 text-[0.8rem]"> note app</p>
-                    </div>
-                    <div className="h-[4rem] flex items-center justify-center">
-                      <p className="text-[0.8rem] text-gray-500 pt-1">
-                        The note-taking application features the ability to
-                        search notes, with options to categorize them for better
-                        organization.
-                      </p>
-                    </div>
-                    <div className="flex-col">
-                      <div className="flex gap-2">
-                        <Stack technology={"Next.js"} />
-                        <Stack technology={"Typescript"} />
-                        <Stack technology={"Redux toolkit"} />
-                      </div>
-                      <div className="flex gap-2">
-                        <Stack technology={"TailwindCSS"} />
-                      </div>
-                    </div>
-                    <div className="mt-4">
-                      <Links
-                        source={"https://github.com/chefberke/notes-app"}
-                        website={"https://apps-notes.netlify.app"}
-                      />
-                    </div>
+                    <Links
+                      source={"https://github.com/chefberke/memory-buddy"}
+                      website={"https://memory-buddy.vercel.app/"}
+                    />
                   </div>
                 </div>
               </div>
