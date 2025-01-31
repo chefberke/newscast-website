@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.className} bg-black text-white`}>
-        <div className="flex items-center justify-center w-full h-screen">
+        <div className="flex items-center justify-center w-full h-screen px-4 md:px-8">
           <div className="flex flex-col items-start justify-start max-w-2xl w-full h-screen pt-16">
             <Navbar />
             <div className="mt-20">{children}</div>

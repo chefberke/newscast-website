@@ -13,9 +13,8 @@ function Projects() {
         - Built with a modern UI/UX for a smooth and intuitive experience.
         - Integrated with a real-time database for instant updates.
       `,
-      image: "./unidegerlendir.svg",
-      github: "https://github.com/yourusername/unidegerlendir",
-      liveDemo: "https://unidegerlendir.com",
+      github: "https://github.com/chefberke/universite-degerlendir",
+      liveDemo: "https://universite-degerlendir.vercel.app",
     },
     {
       title: "Spotiwrap",
@@ -26,22 +25,8 @@ function Projects() {
         - Optimized for performance with seamless API integration.
         - Designed to be lightweight and responsive across devices.
       `,
-      image: "./spotiwrap.svg",
-      github: "https://github.com/yourusername/spotiwrap",
-      liveDemo: "https://spotiwrap.com",
-    },
-    {
-      title: "Lumi Kanban",
-      alt: "kanban board",
-      description: `
-        - A simple yet powerful task management tool for organizing work efficiently.
-        - Features drag-and-drop functionality for seamless task movement.
-        - Built with a dynamic UI that adapts to different workflows.
-        - Supports real-time updates for a collaborative experience.
-      `,
-      image: "./lumi-kanban.svg",
-      github: "https://github.com/yourusername/lumi-kanban",
-      liveDemo: "https://lumi-kanban.com",
+      github: "https://github.com/lumi-work/spotiwrap",
+      liveDemo: "https://spoti-wrap.vercel.app/",
     },
     {
       title: "git.cow",
@@ -52,9 +37,32 @@ function Projects() {
         - Provides detailed insights to track open-source engagement.
         - Optimized for efficiency with smooth animations and transitions.
       `,
-      image: "./git-cow.svg",
-      github: "https://github.com/yourusername/git-cow",
-      liveDemo: "https://git-cow.com",
+      github: "https://github.com/lumi-work/git.cow",
+      liveDemo: "https://git-cow.vercel.app",
+    },
+    {
+      title: "Lumi UI",
+      alt: "ui component library",
+      description: `
+        - A modern, customizable UI component library designed for React and Next.js projects.
+        - Provides a collection of reusable components to streamline development.
+        - Built with performance and accessibility in mind for a seamless user experience.
+        - Designed to be easily integrated into projects with minimal setup.
+      `,
+      github: "https://github.com/lumi-work/lumi.ui",
+      liveDemo: "https://github.com/lumi-work/lumi.ui",
+    },
+    {
+      title: "Lumi Kanban",
+      alt: "kanban board",
+      description: `
+        - A simple yet powerful task management tool for organizing work efficiently.
+        - Features drag-and-drop functionality for seamless task movement.
+        - Built with a dynamic UI that adapts to different workflows.
+        - Supports real-time updates for a collaborative experience.
+      `,
+      github: "https://github.com/lumi-work/lumi-kanban",
+      liveDemo: "https://github.com/lumi-work/lumi-kanban",
     },
   ];
 
