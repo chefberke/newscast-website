@@ -9,7 +9,8 @@ function CvButton() {
         target="_blank"
         className="font-normal text-sm flex items-center gap-2"
       >
-        Open CV <MdArrowOutward className="text-lg" />
+        Open CV
+        <MdArrowOutward className="text-lg" />
       </a>
     </div>
   );

@@ -4,7 +4,7 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 
 function Footer() {
   return (
-    <div className="mt-12">
+    <div className="mt-12 pb-8">
       <div className="flex items-center gap-4 text-gray-300 font-light text-[16px]">
         <a
           href={"https://github.com/chefberke"}
