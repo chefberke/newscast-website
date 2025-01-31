@@ -23,9 +23,9 @@ function Contact() {
             {" "}
             LinkedIn
           </a>
-          . If you'd like to chat and get to know each other, you can grab some
-          time on my calendar to schedule a meeting. I look forward to meeting
-          you and exchanging ideas!
+          . If you&apos;d like to chat and get to know each other, you can grab
+          some time on my calendar to schedule a meeting. I look forward to
+          meeting you and exchanging ideas!
         </p>
       </div>
     </div>
