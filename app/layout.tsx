@@ -48,6 +48,7 @@ export default function RootLayout({
       <body className={`${poppins.className} bg-black text-white`}>
         <Analytics />
         <div className="flex items-center justify-center w-full h-screen px-4 md:px-8">
+          <div className="absolute top-0 w-48 h-48 md:w-64 md:h-64 blur-[250px] md:blur-[250px] bg-neutral-700 m-auto"></div>
           <div className="flex flex-col items-start justify-start max-w-2xl w-full h-screen pt-16">
             <Navbar />
             <div className="mt-20">{children}</div>
