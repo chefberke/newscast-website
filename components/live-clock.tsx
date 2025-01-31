@@ -3,32 +3,20 @@
 import { useEffect, useState } from "react";
 
 const LiveClock = () => {
-  const [time, setTime] = useState<Date>(new Date());
+  const [time, setTime] = useState(new Date());
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setTime(new Date());
-    }, 1000);
-
+    const interval = setInterval(() => setTime(new Date()), 1000);
     return () => clearInterval(interval);
   }, []);
 
   const formatTime = (date: Date): string => {
-    let hours: number = date.getHours();
-    const minutes: number = date.getMinutes();
-    const seconds: number = date.getSeconds();
-    const ampm: string = hours >= 12 ? "PM" : "AM";
+    const hours = date.getHours() % 12 || 12;
+    const minutes = date.getMinutes().toString().padStart(2, "0");
+    const seconds = date.getSeconds().toString().padStart(2, "0");
+    const ampm = date.getHours() >= 12 ? "PM" : "AM";
 
-    hours = hours % 12;
-    hours = hours ? hours : 12;
-
-    const formattedHours: string = hours < 10 ? `0${hours}` : `${hours}`;
-    const formattedMinutes: string =
-      minutes < 10 ? `0${minutes}` : `${minutes}`;
-    const formattedSeconds: string =
-      seconds < 10 ? `0${seconds}` : `${seconds}`;
-
-    return `${formattedHours}:${formattedMinutes}:${formattedSeconds} ${ampm}`;
+    return `${hours}:${minutes}:${seconds} ${ampm}`;
   };
 
   return (
