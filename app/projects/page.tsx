@@ -75,39 +75,47 @@ function Projects() {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="flex flex-col items-center sm:items-start border-t border-neutral-900 pb-8"
+            className="flex flex-col items-center sm:items-start border-t border-neutral-900/50 pb-8 hover:bg-neutral-900/30 transition-all p-4 -mx-4"
           >
             <div className="w-full pt-8">
-              <h3 className="font-normal text-white">{project.title}</h3>
-              <p>
+              <div className="flex items-center gap-3 mb-4">
+                <h3 className="font-medium text-lg text-white">
+                  {project.title}
+                </h3>
+                <span className="text-xs text-neutral-400 bg-neutral-800/50 px-2 py-0.5 rounded-full">
+                  {project.alt}
+                </span>
+              </div>
+              <p className="mb-6">
                 {project.description.split("\n").map((line, index) => (
                   <span
                     key={index}
-                    className="font-light text-gray-400 text-sm"
+                    className="font-light text-gray-400 text-sm block leading-relaxed"
                   >
                     {line}
-                    <br />
                   </span>
                 ))}
               </p>
 
-              <div className="flex gap-2">
+              <div className="flex gap-3">
                 <a
                   href={project.github}
                   target="_blank"
-                  className="bg-neutral-800 text-[0.9rem] text-neutral-200 rounded py-0.5 px-2 flex items-center gap-2 hover:opacity-85 transition-all"
+                  className="bg-neutral-800 text-[0.9rem] text-neutral-200 rounded-md py-0.5 px-2 flex items-center gap-2 hover:bg-neutral-700 transition-all"
                 >
                   <FaGithub />
                   Source
                 </a>
-                <a
-                  href={project.liveDemo}
-                  target="_blank"
-                  className="bg-neutral-800 text-[0.9rem] text-neutral-200 rounded py-0.5 px-2 flex items-center gap-2 hover:opacity-85 transition-all"
-                >
-                  <TbWorld />
-                  Website
-                </a>
+                {project.liveDemo && project.liveDemo !== project.github && (
+                  <a
+                    href={project.liveDemo}
+                    target="_blank"
+                    className="bg-neutral-800 text-[0.9rem] text-neutral-200 rounded-md py-0.5 px-2 flex items-center gap-2 hover:bg-neutral-700 transition-all"
+                  >
+                    <TbWorld />
+                    Website
+                  </a>
+                )}
               </div>
             </div>
           </div>
