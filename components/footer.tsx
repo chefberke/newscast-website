@@ -1,6 +1,12 @@
+"use client";
+
 import React from "react";
-import LiveClock from "@/components/live-clock";
+import dynamic from "next/dynamic";
 import { MdOutlineArrowOutward } from "react-icons/md";
+
+const LiveClock = dynamic(() => import("@/components/live-clock"), {
+  ssr: false,
+});
 
 function Footer() {
   return (
