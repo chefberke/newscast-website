@@ -17,6 +17,12 @@ function Navbar() {
         projects
       </Link>
       <Link
+        href={"/setup"}
+        className="hover:opacity-85 transition-all hover:cursor-pointer select-none"
+      >
+        setup
+      </Link>
+      <Link
         href={"/contact"}
         className="hover:opacity-85 transition-all hover:cursor-pointer select-none"
       >
