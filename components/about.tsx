@@ -15,7 +15,7 @@ function About() {
             <Image src={Avatar} width={60} height={60} alt="chefberke-avatar" />
           </div>
           <div className="flex flex-col">
-            <h2 className="font-medium">Berke Kanber</h2>
+            <h2 className="font-medium text-neutral-50">Berke Kanber</h2>
             <p className="font-light text-neutral-300">Software Developer</p>
           </div>
         </div>
