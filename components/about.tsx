@@ -1,7 +1,7 @@
 import React from "react";
 import CvButton from "@/components/cv-button";
 import Image from "next/image";
-import Avatar from "../public/chefberke.png";
+import Avatar from "../public/chefberke2.png";
 
 function About() {
   return (
@@ -10,9 +10,15 @@ function About() {
         <h2 className="text-xl font-medium">About</h2>
       </div>
       <div className="pt-7">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-4">
           <div>
-            <Image src={Avatar} width={60} height={60} alt="chefberke-avatar" />
+            <Image
+              src={Avatar}
+              width={55}
+              height={55}
+              alt="chefberke-avatar"
+              className="rounded-full"
+            />
           </div>
           <div className="flex flex-col">
             <h2 className="font-medium text-neutral-50">Berke Kanber</h2>

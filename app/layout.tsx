@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Poppins, Nunito } from "next/font/google";
 import "@/styles/globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
@@ -7,6 +7,11 @@ import { Analytics } from "@vercel/analytics/react";
 
 const poppins = Poppins({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+});
+
+const montserrat = Nunito({
+  weight: ["400", "700", "800", "900"],
   subsets: ["latin"],
 });
 
@@ -45,7 +50,7 @@ export default function RootLayout({
         )}
       </head>
 
-      <body className={`${poppins.className} bg-black text-white`}>
+      <body className={`${montserrat.className} bg-black text-white`}>
         <Analytics />
         <div className="flex items-center justify-center w-full h-screen px-4 md:px-8">
           <div className="flex flex-col items-start justify-start max-w-2xl w-full h-screen pt-16">
