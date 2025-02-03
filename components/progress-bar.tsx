@@ -2,16 +2,7 @@
 
 import { AppProgressBar } from "next-nprogress-bar";
 
-interface ProgressBarProps {
-  height?: string;
-  color?: string;
-  options?: {
-    showSpinner?: boolean;
-  };
-  shallowRouting?: boolean;
-}
-
-export default function ProgressBar(props: ProgressBarProps) {
+export default function ProgressBar() {
   return (
     <AppProgressBar
       height="2px"

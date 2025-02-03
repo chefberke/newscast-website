@@ -26,12 +26,7 @@ export default function RootLayout({
 
       <body className={`${montserrat.className} bg-black text-white`}>
         <Analytics />
-        <ProgressBar
-          height="2px"
-          color="#ffffff"
-          options={{ showSpinner: false }}
-          shallowRouting
-        />
+        <ProgressBar />
         <div className="flex items-center justify-center w-full h-screen px-4 md:px-8">
           <div className="flex flex-col items-start justify-start max-w-2xl w-full h-screen pt-16">
             <Navbar />
