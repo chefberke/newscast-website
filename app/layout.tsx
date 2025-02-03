@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { Poppins, Nunito } from "next/font/google";
+import { Nunito } from "next/font/google";
 import "@/styles/globals.css";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import { Analytics } from "@vercel/analytics/react";
 
-const poppins = Poppins({
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  subsets: ["latin"],
-});
+// const poppins = Poppins({
+//   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+//   subsets: ["latin"],
+// });
 
 const montserrat = Nunito({
   weight: ["400", "700", "800", "900"],
