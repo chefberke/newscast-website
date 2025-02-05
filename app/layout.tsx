@@ -5,6 +5,7 @@ import Footer from "@/components/footer";
 import { Analytics } from "@vercel/analytics/react";
 import { metadata as siteMetadata } from "./metadata";
 import ProgressBar from "@/components/progress-bar";
+import PageTransition from "@/components/page-transition";
 
 const montserrat = Nunito({
   weight: ["400", "700", "800", "900"],
@@ -30,7 +31,9 @@ export default function RootLayout({
         <div className="flex items-center justify-center w-full h-screen px-4 md:px-8">
           <div className="flex flex-col items-start justify-start max-w-2xl w-full h-screen pt-16">
             <Navbar />
-            <div className="mt-20">{children}</div>
+            <PageTransition>
+              <div className="mt-20">{children}</div>
+            </PageTransition>
             <Footer />
           </div>
         </div>
